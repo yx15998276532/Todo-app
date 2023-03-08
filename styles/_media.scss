@@ -1,0 +1,204 @@
+
+@media screen and (max-width:450px) {
+        .todo-container {
+            max-width: 390px;
+            top: 20px;
+            padding: 0 20px;
+        } 
+        .todo-title img {
+            width: 35px;
+            height: 35px;
+        }
+        #main-text {
+            padding: 5px 0px 5px 65px;
+        line-height: 50px !important;
+        }  
+        .main-circularBtn {
+            width: 30px;
+            height: 30px;
+        }
+        .todo-allList {
+            margin-top: 10px;
+        }
+        .todo-main {
+            margin: 0;
+        }
+        .todo-list {
+            line-height: 25px;
+            padding: 15px 15px;
+        }
+        .list-check {
+            width: 18px;
+            height: 18px;
+            padding: 12px;
+        }
+        .list-text {
+            text-indent: 20px;
+            font-size: 1.1rem;
+        }
+        .list-delete {
+            width: 30px;
+            height: 20px;
+            right: 35px;
+        }
+        .list-foot {
+            width: 100%;
+            line-height: 25px;
+            padding: 5px 25px;
+            display: flex;
+            font-size: 1rem;
+            line-height: 45px;
+        } 
+        .foot-all,
+        .foot-active,
+        .foot-completed {
+            display: inline-block;
+            position: absolute;
+            margin-top: 70px;
+            width: 100%;
+            left: 0px;
+            right: 0px;
+            border-radius: 5px;
+            padding: 5px 0px !important;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0); //取消移动端默认点击样式
+        }
+        .foot-all {
+            margin-left: 20px;
+            width: 38%;
+            padding-left: 65px !important;
+            background-color: var(--color7);
+            box-shadow: 5px 10px 30px var(--color13);
+        }
+        .foot-active {
+            margin-left: 150px;
+            width: 38%;
+            padding-left: 15px !important;
+            background-color: var(--color7);
+            box-shadow: 30px 10px 30px var(--color13);
+        }   
+        .foot-completed {
+            margin-left: 255px;
+            width: 29%;
+            background-color: var(--color7);
+            box-shadow: 20px 10px 20px var(--color13);
+        }
+        .foot-clear {
+            display: flex;
+        } 
+        .foot-middle {
+            display: block;
+        }
+        .active-btn {
+            color: hsl(228, 88%, 48%);
+        } 
+        .tail-prompt {
+            margin-top: 120px;
+        }
+}
+
+@media screen and (max-width:390px) {
+  body{
+        height: 100vh;
+        overflow: hidden;
+    }
+.todo{
+    font-size: 13px;
+}
+.todo-backImage{
+    width: 100%;
+    object-fit: cover;
+}
+.todo-container{
+    width: 375px;
+    top: 15px;
+    padding:0 20px;
+}
+.todo-title img{
+    width: 25px;
+    height: 25px;
+}
+#main-text{
+    padding: 3px 0px 3px 60px;
+}
+.main-circularBtn{
+    width:25px;
+    height: 25px;
+}
+.todo-allList{
+    margin-top: -15px;
+}
+ .todo-main{
+    margin: 0;
+ }
+ .todo-list{
+    line-height: 20px;
+    padding: 15px 15px;
+ }
+.list-check {
+    width: 18px;
+    height: 18px;
+    padding: 12px;  
+}
+.list-text {
+    text-indent: 20px;
+    font-size: 1.1rem;
+}
+
+.list-delete {
+    width: 25px;
+    height: 15px;
+    right: 25px;
+}
+.list-foot {
+    width: 100%;
+    line-height: 20px;
+    padding: 5px 25px;
+    display: flex;
+    font-size: 1rem;
+    line-height: 40px;
+}
+    .foot-all,.foot-active,.foot-completed {
+     display: inline-block;
+     position: absolute;
+     margin-top: 70px;
+     width: 100%;
+     left: 0px;
+     right: 0px;
+    border-radius: 5px;
+    padding:5px 0px !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); //取消移动端默认点击样式
+}
+  .foot-all{
+    margin-left: 20px;
+    width: 100px;
+    padding-left: 60px !important;
+    background-color: var(--color7);
+    box-shadow: 5px 10px 30px var(--color13);
+  }
+  .foot-active{
+    margin-left: 100px;
+    width: 130px;
+    padding-left: 30px !important;
+    background-color: var(--color7);
+    box-shadow: 30px 10px 30px var(--color13);
+  }
+  .foot-completed{
+    margin-left: 205px;
+    width: 148px;
+    background-color: var(--color7);
+    box-shadow: 20px 10px 20px var(--color13);
+  }
+.foot-clear {
+    display: flex; 
+}
+.foot-middle {
+    display: block; 
+}
+ .active-btn {
+     color: hsl(228, 88%, 48%);
+ }
+ .tail-prompt {
+     margin-top: 120px;
+ }
+
+}

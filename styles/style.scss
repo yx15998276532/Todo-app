@@ -1,0 +1,218 @@
+
+:root {
+    --deskTop-back-color-darkBlue: hsl(235, 21%, 11%);
+    --color1: hsl(0, 0%, 98%);
+    --color2: hsl(236, 33%, 92%);
+    --color3: hsl(233, 11%, 84%);
+    --color4: hsl(236, 9%, 61%);
+    --color5: hsl(235, 19%, 35%);
+    --color6: hsl(235, 21%, 11%);
+    --color7: hsl(235, 24%, 19%);
+    --color8: hsl(234, 39%, 85%);
+    --color9: hsl(236, 33%, 92%);
+    --color10: hsl(234, 11%, 52%);
+    --color11: hsl(233, 14%, 35%);
+    --color12: hsl(237, 14%, 26%);
+    --color13:#000;
+}
+.light-mode {
+    --color3:hsl(235, 19%, 35%);
+    --color6: hsl(0, 0%, 98%);
+    --color7:hsl(0, 0%, 98%);
+    --color10: hsl(236, 9%, 61%);
+    --color13:hsl(234, 39%, 85%);
+    --color2:hsl(235, 19%, 35%);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: var(--color6);
+    height: 100vh;
+    transition: all .4s ease-in-out;
+}
+.todo {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .todo-backImage {
+        width: 100%;
+        transition: all .4s ease-in-out;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .todo-container {
+        position: absolute;
+        width: 700px;
+        top: 80px;
+    }
+        .todo-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: papayawhip;
+            padding: 10px;
+            transition: all .6s ease-in-out;
+            font-weight: 400;
+            
+        }
+     .todo-title img {
+                width: 35px;
+                height: 35px;
+                cursor: pointer;
+            }
+        .todo-main {
+            display: flex;
+            position: relative;
+            
+        }
+            .main-img {
+                width: 35px;
+                height: 35px;
+                cursor: pointer;
+            }
+            #main-text {
+                width: 100%;
+                line-height: 50px;
+                background-color: var(--color7);
+                border: 1px solid var(--color7);
+                border-radius: 10px;
+                margin: 30px 0;
+                padding: 7px 25px 7px 80px;
+                font-size: 1.5rem;
+                position: relative;
+                color: var(--color2);
+            }
+            input:focus{
+                outline: none;     
+            }
+        .main-circularBtn {
+            background: transparent;
+            top: 46px;
+            left: 25px;
+            border: 1.5px solid var(--color10);
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .check-img {
+            width: 15px;
+            height: 15px;
+        }
+   
+        .todo-list {
+            width: 100%;
+            line-height: 50px;
+            background-color: var(--color7);
+            border: none;
+            border-bottom: 1px solid var(--color10);
+            list-style: none;
+            display: flex;
+            align-items: center;
+            padding: 10px 25px;
+            color: var(--color3);
+            transition: all .4s ease-in-out;
+            box-shadow: 0px 0px 10px var(--color13);
+        }
+            .list-check {
+                position: relative;
+                background: transparent;
+                border: 1.5px solid var(--color10);
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                padding: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all .4s ease-in-out;
+                cursor: pointer;
+            }
+            .list-text {
+                text-indent: 20px;
+                font-size: 1.5rem;
+                color: var(--color10);
+                width: 85%;
+                overflow: hidden;
+                transition: all .4s ease-in-out;
+            }
+            .list-delete {
+                width: 35px;
+                height: 25px;
+                right: 25px;
+                position: absolute;
+                border: none;
+                display: flex;
+                align-items: center;
+                background-color: var(--color7);
+                cursor: pointer;
+            }
+            .list-foot {
+                width: 100%;
+                line-height: 50px;
+                background-color: var(--color7);
+                border: 1px solid var(--color7);
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                list-style: none;
+                display: flex;
+                align-items: center;
+                padding: 3px 25px;
+                color: var(--color10);
+                justify-content: space-between;
+                transition: all .4s ease-in-out;
+                box-shadow: 1px 5px 20px var(--color13);
+            }
+            .foot-middle {
+                display: flex;
+                transition: all .4s ease-in-out;
+            }
+            .foot-middle li {
+                padding: 0 15px;
+            }
+            .foot-middle .foot-clear {
+                margin-left: 45px;
+                padding-right: 5px;
+            }
+            .foot-all,
+            .foot-active,
+            .foot-completed,
+            .foot-clear {
+                cursor: pointer;
+            }
+            .active-btn {
+                color: hsl(228, 88%, 48%);
+                transition: all .4s ease-in-out;
+            }
+            .active-display {
+                display: none;
+                transition: all .4s ease-in-out;
+            }
+            .active-events {
+                pointer-events: none;
+            }
+            .tail-prompt{
+                margin-top: 60px;
+                display: flex;
+                justify-content: center;
+                color: var(--color10);
+            }
+
+
+@import './_media'
