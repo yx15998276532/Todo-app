@@ -344,6 +344,8 @@ window.onresize = function () {
 function changeMargin() {
   if (window.innerWidth <= 450) {
     bgDesktop.children[0].src = "./images/bg-mobile-dark.jpg";
+    bgDesktop.children[0].style.height = "225px";
+    console.log(bgDesktop.children[0]);
   } else {
     bgDesktop.children[0].src = "./images/bg-desktop-light.jpg";
   }
