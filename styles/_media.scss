@@ -9,6 +9,10 @@
             width: 35px;
             height: 35px;
         }
+        .todo-backImage {
+          width: 100%;
+          height: 225px !important;
+        }
         #main-text {
             padding: 5px 0px 5px 65px;
         line-height: 50px !important;
@@ -106,7 +110,8 @@
 }
 .todo-backImage{
     width: 100%;
-    object-fit: cover;
+    height: 225px !important;
+   
 }
 .todo-container{
     width: 375px;

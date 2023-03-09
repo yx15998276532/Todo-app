@@ -45,11 +45,14 @@ body {
 }
     .todo-backImage {
         width: 100%;
+        height: 300px;
+        object-fit: cover;
         transition: all .4s ease-in-out;
     }
     img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
     }
     .todo-container {
         position: absolute;
